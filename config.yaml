@@ -1,0 +1,13 @@
+spark:
+  app_name: "RealTimeStreamingAnalytics"
+  master: "local[*]"
+
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "events"
+
+kinesis:
+  stream_name: "event-stream"
+  region_name: "us-east-1"
+
+checkpoint_path: "data/checkpoints/"
